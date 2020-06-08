@@ -1,0 +1,9 @@
+package Factory;
+
+public interface IDragon {
+	public String getName()
+}
+
+public class Factory {
+	
+}

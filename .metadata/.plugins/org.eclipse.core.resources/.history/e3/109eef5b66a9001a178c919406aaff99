@@ -1,0 +1,43 @@
+package Adapter;
+
+class VietnameseClient {
+	VietnameseTarget vietnameseTarget;
+	
+	public void send()
+}
+
+interface VietnameseTarget {
+	public void send(String words);
+}
+
+class TranslatorAdapter implements VietnameseTarget {
+
+	EnglishAdaptee EnglishAdaptee;
+	
+	public TranslatorAdapter(EnglishAdaptee englishAdaptee) {
+		super();
+		EnglishAdaptee = englishAdaptee;
+	}
+
+	@Override
+	public void send(String words) {
+		
+	}
+	
+	public String translate(String vietnameseWords) {
+		System.out.println("Translated");
+		return "Hello cac ban";
+	}
+	
+}
+
+class EnglishAdaptee {
+	public void receive(String words) {
+		System.out.println("Receiving words from adapter...");
+		System.out.println(words);
+	}
+}
+
+public class Adapter {
+	
+}

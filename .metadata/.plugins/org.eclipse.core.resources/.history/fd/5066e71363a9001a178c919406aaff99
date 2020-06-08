@@ -1,0 +1,9 @@
+package Composite;
+
+class FileComponent {
+	
+}
+
+public class Composite {
+
+}

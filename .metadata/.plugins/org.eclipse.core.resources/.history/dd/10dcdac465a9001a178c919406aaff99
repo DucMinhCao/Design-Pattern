@@ -1,0 +1,15 @@
+package Adapter;
+
+class VietnameseClient {
+	VietnameseTarget vietnameseTarget;
+	
+	public void send()
+}
+
+interface VietnameseTarget {
+	public void send(String words);
+}
+
+public class Adapter {
+	
+}

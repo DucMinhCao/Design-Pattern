@@ -1,0 +1,23 @@
+package Test;
+
+class Animal {
+	public void doSth() {
+		System.out.println("chay nhay");
+	}
+}
+
+class Dog extends Animal {
+	
+	@Override
+	public void doSth() {
+		super.doSth();
+		System.out.println("Gau gau");
+	}
+}
+
+public class Test {
+	public static void main(String[] args) {
+		Animal test = new Dog();
+		test.doSth();
+	}
+}

@@ -1,0 +1,8 @@
+package Prototype;
+// dùng để clone ra những thằng có đặc điểm hơi giống nhau
+
+
+
+public class Prototype {
+	
+}

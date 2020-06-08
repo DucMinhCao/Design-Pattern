@@ -1,0 +1,15 @@
+package Adapter;
+
+class VietnameseClient {
+	VietnameseTarget vietnameseTarget;
+	
+	
+}
+
+class VietnameseTarget {
+	
+}
+
+public class Adapter {
+	
+}

@@ -1,0 +1,27 @@
+package Factory;
+
+interface IDragon {
+	public String getName();
+}
+
+class FireDragon implements IDragon {
+
+	@Override
+	public String getName() {
+		return "Fire Dragon";
+	}
+	
+}
+
+class WindDragon implements IDragon {
+
+	@Override
+	public String getName() {
+		return "Wind Dragon";
+	}
+	
+}
+
+public class Factory {
+	
+}

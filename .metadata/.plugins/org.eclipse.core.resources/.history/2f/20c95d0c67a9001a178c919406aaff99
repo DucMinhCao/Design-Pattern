@@ -1,0 +1,17 @@
+package Test;
+
+class Animal {
+	public void doSth() {
+		System.out.println("chay nhay");
+	}
+}
+
+class Dog extends Animal {
+	public void doSth() {
+		System.out.println("Gau gau");
+	}
+}
+
+public class Test {
+
+}

@@ -1,0 +1,13 @@
+package Adapter;
+
+class VietnameseClient {
+	
+}
+
+class VietnameseTarget {
+	
+}
+
+public class Adapter {
+	
+}

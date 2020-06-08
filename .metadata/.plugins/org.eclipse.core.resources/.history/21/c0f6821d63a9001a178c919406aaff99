@@ -1,0 +1,14 @@
+package Composite;
+
+interface FileComponent {
+	public void showProperty();
+	public long totalSize();
+}
+
+class FileLeaf implements FileComponent {
+	
+}
+
+public class Composite {
+
+}

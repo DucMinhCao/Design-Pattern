@@ -1,0 +1,11 @@
+package Test;
+
+class Animal {
+	public void doSth() {
+		
+	}
+}
+
+public class Test {
+
+}

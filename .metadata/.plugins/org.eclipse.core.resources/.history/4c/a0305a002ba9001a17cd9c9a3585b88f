@@ -1,0 +1,18 @@
+package Prototype;
+// dùng để clone ra những thằng có đặc điểm hơi giống nhau
+
+class Computer implements Cloneable {
+	private String os;
+	private String office;
+	private String antiVirus;
+	private String browser;
+	private String others;
+	
+	public Computer(String os, String office, String antiVirus, String browser, String others) {
+		super();
+	}
+}
+
+public class Prototype {
+	
+}

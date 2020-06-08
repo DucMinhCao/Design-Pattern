@@ -1,0 +1,7 @@
+package Builder;
+
+// Dùng để khởi tạo những object phức tạp step by step
+
+public class Builder {
+	
+}

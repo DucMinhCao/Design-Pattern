@@ -1,0 +1,44 @@
+package Decorator;
+
+interface IPizza {
+	public String doPizza();
+}
+
+class TomatoPizza implements IPizza {
+
+	@Override
+	public String doPizza() {
+		return "Tomato Pizza";
+	}
+	
+}
+
+class ChickenPizza implements IPizza {
+
+	@Override
+	public String doPizza() {
+		return "Chicken Pizza";
+	}
+	
+}
+
+abstract class PizaaDecorator {
+	protected IPizza mPizza;
+
+	public PizaaDecorator(IPizza mPizza) {
+		super();
+		this.mPizza = mPizza;
+	}
+
+	public IPizza getmPizza() {
+		return mPizza;
+	}
+
+	public void setmPizza(IPizza mPizza) {
+		this.mPizza = mPizza;
+	}
+}
+
+public class Decorator {
+
+}

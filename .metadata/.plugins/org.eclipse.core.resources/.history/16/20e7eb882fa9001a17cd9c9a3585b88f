@@ -1,0 +1,13 @@
+package Builder;
+
+/**
+ * 
+ * @author Cao Minh Duc
+ * Builder dùng để tạo ra những Object phức tạp từng bước một
+ * Ví dụ như: Mình xây nhà, nhưng sau này mình có thể xây nhà có cây, nhà có hồ bơi, nhà có garage
+ * Composite, Adapter, Proxy, Decorator, Template Method, Stragtegy,State, Observer
+ */
+
+public class Builder {
+	
+}

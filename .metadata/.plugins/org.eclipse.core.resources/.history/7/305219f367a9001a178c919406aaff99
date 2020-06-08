@@ -1,0 +1,9 @@
+package Test;
+
+public class Snippet {
+	public static void main(String[] args) {
+			VietnameseTarget client = new TranslatorAdapter(new EnglishAdaptee());
+			client.send("Xin chao");
+		}
+}
+

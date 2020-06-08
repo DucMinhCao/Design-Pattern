@@ -1,0 +1,10 @@
+package Singleton;
+
+public class Singleton {
+	
+	private static Singleton instance = null;
+	
+	public static void main(String[] args) {
+		
+	}
+}

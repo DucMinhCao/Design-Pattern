@@ -1,0 +1,28 @@
+package Composite;
+
+interface FileComponent {
+	public void showProperty();
+	public long totalSize();
+}
+
+class FileLeaf implements FileComponent {
+
+	private String fileName;
+	
+	@Override
+	public void showProperty() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public long totalSize() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+
+public class Composite {
+
+}

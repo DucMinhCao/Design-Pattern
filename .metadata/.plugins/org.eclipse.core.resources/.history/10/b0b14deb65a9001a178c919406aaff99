@@ -1,0 +1,30 @@
+package Adapter;
+
+class VietnameseClient {
+	VietnameseTarget vietnameseTarget;
+	
+	public void send()
+}
+
+interface VietnameseTarget {
+	public void send(String words);
+}
+
+class TranslatorAdapter implements VietnameseTarget {
+
+	@Override
+	public void send(String words) {
+		
+	}
+	
+}
+
+class EnglistAdaptee {
+	public void receive(String words) {
+		
+	}
+}
+
+public class Adapter {
+	
+}

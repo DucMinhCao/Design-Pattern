@@ -1,0 +1,55 @@
+package Composite;
+
+interface FileComponent {
+	public void showProperty();
+	public long totalSize();
+}
+
+class FileLeaf implements FileComponent {
+
+	private String fileName;
+	private long fileSize;
+	
+	public FileLeaf() {
+		
+	}
+	
+	public FileLeaf(String fileName, long fileSize) {
+		super();
+		this.fileName = fileName;
+		this.fileSize = fileSize;
+	}
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	public long getFileSize() {
+		return fileSize;
+	}
+
+	public void setFileSize(long fileSize) {
+		this.fileSize = fileSize;
+	}
+
+	@Override
+	public void showProperty() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public long totalSize() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+
+public class Composite {
+
+}

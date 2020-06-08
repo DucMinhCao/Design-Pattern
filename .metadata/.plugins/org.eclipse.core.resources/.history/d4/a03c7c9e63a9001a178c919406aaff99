@@ -1,0 +1,73 @@
+package Composite;
+
+import java.util.ArrayList;
+import java.util.List;
+
+interface FileComponent {
+	public String showProperty();
+	public long totalSize();
+}
+
+class FileLeaf implements FileComponent {
+
+	private String fileName;
+	private long fileSize;
+	
+	public FileLeaf() {
+		
+	}
+	
+	public FileLeaf(String fileName, long fileSize) {
+		super();
+		this.fileName = fileName;
+		this.fileSize = fileSize;
+	}
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	public long getFileSize() {
+		return fileSize;
+	}
+
+	public void setFileSize(long fileSize) {
+		this.fileSize = fileSize;
+	}
+
+	@Override
+	public String showProperty() {
+		return "FileLeaf [fileName=" + fileName + ", fileSize=" + fileSize + "]";
+	}
+
+	@Override
+	public long totalSize() {
+		return this.fileSize;
+	}
+}
+
+class FolderComposite implements FileComponent {
+
+	private List<FileComponent> files = new ArrayList<FileComponent>();
+	
+	@Override
+	public String showProperty() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public long totalSize() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+
+public class Composite {
+
+}

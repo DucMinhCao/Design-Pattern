@@ -1,0 +1,9 @@
+package Decorator;
+
+interface IPizza {
+	public String doPizza();
+}
+
+public class Decorator {
+
+}

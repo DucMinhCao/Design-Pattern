@@ -1,0 +1,82 @@
+package Decorator;
+
+interface IPizza {
+	public String doPizza();
+}
+
+class TomatoPizza implements IPizza {
+
+	@Override
+	public String doPizza() {
+		return "Tomato Pizza";
+	}
+	
+}
+
+class ChickenPizza implements IPizza {
+
+	@Override
+	public String doPizza() {
+		return "Chicken Pizza";
+	}
+	
+}
+
+abstract class PizzaDecorator implements IPizza{
+	protected IPizza mPizza;
+
+	public PizzaDecorator(IPizza mPizza) {
+		super();
+		this.mPizza = mPizza;
+	}
+
+	public IPizza getmPizza() {
+		return mPizza;
+	}
+
+	public void setmPizza(IPizza mPizza) {
+		this.mPizza = mPizza;
+	}
+}
+
+class CheeseDecorator extends PizzaDecorator {
+
+	public CheeseDecorator(IPizza mPizza) {
+		super(mPizza);
+	}
+
+	@Override
+	public String doPizza() {
+		String type = mPizza.doPizza();
+		return type + addChesse();
+	}
+
+	private String addChesse() {
+		return " + cheese";
+	}	
+}
+
+class PepperDecorator extends PizzaDecorator {
+
+	public PepperDecorator(IPizza mPizza) {
+		super(mPizza);
+	}
+
+	@Override
+	public String doPizza() {
+		String type = mPizza.doPizza();
+		return type + addPeper();
+	}
+
+	private String addPeper() {
+		return " + peper";
+	}
+	
+}
+
+public class Decorator {
+	public static void main(String[] args) {
+		IPizza tomato = new TomatoPizza();
+		IPizza chicken = new ChickenPizza();
+	}
+}

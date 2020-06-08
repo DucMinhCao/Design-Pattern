@@ -1,0 +1,11 @@
+package Test;
+
+class Animal {
+	public void doSth() {
+		System.out.println("chay nhay");
+	}
+}
+
+public class Test {
+
+}
